@@ -5,7 +5,7 @@
     <parent>
         <artifactId>SpringCloudConfigurationPlatform</artifactId>
         <groupId>org.muse.cloud</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -38,6 +38,11 @@
             <optional>true</optional>
         </dependency>
         <dependency>
+            <groupId>org.muse.cloud</groupId>
+            <artifactId>load-redis-operater</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
@@ -47,6 +52,15 @@
             <artifactId>spring-boot-autoconfigure-processor</artifactId>
             <optional>true</optional>
         </dependency>
-
+        <dependency>
+            <groupId>org.muse.tool</groupId>
+            <artifactId>Utils</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <optional>true</optional>
+        </dependency>
     </dependencies>
 </project>

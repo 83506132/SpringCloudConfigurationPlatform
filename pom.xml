@@ -8,11 +8,12 @@
     <artifactId>SpringCloudConfigurationPlatform</artifactId>
     <name>ConfigurePlatform</name>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <modules>
         <module>redis-json-config-spring-cloud-autoconfiguration</module>
         <module>redis-json-config-spring-cloud-starter</module>
         <module>demo-instance-project</module>
+        <module>load-redis-operater</module>
     </modules>
 
     <contributors>
@@ -26,6 +27,8 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <project.boot.spring.version>2.6.4</project.boot.spring.version>
+        <project.org.jetbrains.annotations.version>RELEASE</project.org.jetbrains.annotations.version>
     </properties>
 
     <dependencyManagement>
@@ -33,9 +36,25 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.6.4</version>
+                <version>${project.boot.spring.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.muse.tool</groupId>
+                <artifactId>Utils</artifactId>
+                <version>${version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jetbrains</groupId>
+                <artifactId>annotations</artifactId>
+                <version>${project.org.jetbrains.annotations.version}</version>
+                <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>org.muse.cloud</groupId>
+                <artifactId>load-redis-operater</artifactId>
+                <version>${version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -9,9 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>redis-json-config-spring-cloud-starter</artifactId>
-    <name>Entranced</name>
-
+    <artifactId>load-redis-operater</artifactId>
+    <name>Loader</name>
 
     <contributors>
         <contributor>
@@ -21,30 +20,33 @@
         </contributor>
     </contributors>
 
-
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
-
     <dependencies>
         <dependency>
-            <groupId>org.muse.cloud</groupId>
-            <artifactId>redis-json-config-spring-cloud-autoconfiguration</artifactId>
-            <version>${version}</version>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
         </dependency>
         <dependency>
             <groupId>org.muse.tool</groupId>
             <artifactId>Utils</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.muse.cloud</groupId>
-            <artifactId>load-redis-operater</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.jetbrains</groupId>
-            <artifactId>annotations</artifactId>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 

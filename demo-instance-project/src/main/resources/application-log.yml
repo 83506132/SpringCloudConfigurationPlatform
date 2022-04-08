@@ -1,1 +1,5 @@
-app: l
+spring:
+  cloud:
+    config:
+      redis:
+        ip: 1.1.1.1
