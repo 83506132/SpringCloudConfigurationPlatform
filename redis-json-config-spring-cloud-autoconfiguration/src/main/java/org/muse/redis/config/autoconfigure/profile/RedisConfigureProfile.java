@@ -6,6 +6,7 @@ import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Conditional;
 import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
@@ -20,8 +21,8 @@ import java.util.List;
  * @Since 1.0
  */
 @ToString
-@ConditionalOnMissingBean()
 @Component
+@Conditional(FalseCondition.class)
 @ConfigurationProperties(prefix = "spring.cloud.config.redis")
 @Slf4j
 public class RedisConfigureProfile extends RedisConnectInfo implements Serializable {

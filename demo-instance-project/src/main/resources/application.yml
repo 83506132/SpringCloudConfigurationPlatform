@@ -1,8 +1,3 @@
 spring:
   application:
     name: ll
-  profiles:
-    active: dev
-    group:
-      dev:
-        - log

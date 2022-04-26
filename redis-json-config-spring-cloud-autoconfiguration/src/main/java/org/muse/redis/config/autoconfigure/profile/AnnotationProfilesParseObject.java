@@ -29,7 +29,7 @@ import java.util.List;
 public class AnnotationProfilesParseObject extends PropertyParseObject {
 
     public AnnotationProfilesParseObject(MutablePropertySources sources, ConfigurableConversionService conversionService) {
-        super(sources, conversionService, "AnnotationParse");
+        super(sources, conversionService, "AnnotationPropertyParse");
     }
 
     static final AnnotationProfilesParseObject getInstance(MutablePropertySources sources, ConfigurableConversionService conversionService) {

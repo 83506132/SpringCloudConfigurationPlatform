@@ -16,6 +16,12 @@
         <module>load-redis-operater</module>
     </modules>
 
+    <description>
+        我这个框架无法符合大家全部需求,可以进行修改迭代;
+        适合大部分配置场景,你可以保留你的意见和想法但请勿诋毁谢谢;
+        友情提醒:每个框架都有他独特的思维和逻辑约束,没必要有小纠结只要正常使用就行,它逻辑已经定义了假如你觉得不行可以自己对他进行修改,代码不可能完美只可能逻辑完整;
+    </description>
+
     <contributors>
         <contributor>
             <name>赵Muse</name>

@@ -56,7 +56,7 @@ public abstract class RedisSourceReader {
     public abstract Object get(String name) throws RedisConnectionException;
 
     public final Jedis refresh(Jedis jedis) {
-        int i, version = Integer.valueOf(jedis.hget(mapKey, VERSION));
+        int i, version = Integer.parseInt(jedis.hget(mapKey, VERSION));
         while (version > (i = this.version.get())) {
             if (!this.version.compareAndSet(i, version)) {
                 sourceOrCache.clear();
