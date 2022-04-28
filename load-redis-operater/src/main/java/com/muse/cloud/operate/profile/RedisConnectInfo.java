@@ -1,4 +1,4 @@
-package com.muse.cloud.operate;
+package com.muse.cloud.operate.profile;
 
 import lombok.extern.slf4j.Slf4j;
 

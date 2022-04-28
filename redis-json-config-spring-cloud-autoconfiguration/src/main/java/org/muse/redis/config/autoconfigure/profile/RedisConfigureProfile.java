@@ -1,13 +1,11 @@
 package org.muse.redis.config.autoconfigure.profile;
 
-import com.muse.cloud.operate.RedisConnectInfo;
+import com.muse.cloud.operate.profile.RedisConnectInfo;
 import com.muse.tool.util.StringTools;
 import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Conditional;
-import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
 import java.util.Collections;
@@ -21,7 +19,7 @@ import java.util.List;
  * @Since 1.0
  */
 @ToString
-@Component
+@SuppressWarnings("all")
 @Conditional(FalseCondition.class)
 @ConfigurationProperties(prefix = "spring.cloud.config.redis")
 @Slf4j

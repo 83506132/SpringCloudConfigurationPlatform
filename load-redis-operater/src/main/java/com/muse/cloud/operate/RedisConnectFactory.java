@@ -1,10 +1,10 @@
 package com.muse.cloud.operate;
 
+import com.muse.cloud.operate.profile.RedisConnectInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.pool2.BasePooledObjectFactory;
 import org.apache.commons.pool2.PooledObject;
 import org.apache.commons.pool2.impl.DefaultPooledObject;
-import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import redis.clients.jedis.Jedis;
 
 import java.util.Objects;
